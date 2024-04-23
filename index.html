@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center flex-col h-lvh">
+    <div class="main-container  bg-[#fff] rounded-[30px] relative overflow-hidden w-[768px] max-w-full min-h-[480px]" id="main-container">
+        <div class="form-container sign-up  bg-[#fff] flex items-center justify-center flex-col px-[40px] h-full ">
+            <form class="bg-[#fff] flex items-center justify-center flex-col px-[40px] h-full">
+                <h1 class="text-2xl  px-0 mx-0">Create Account</h1>
+                <div class="avatar w-[80px] h-[80px] bg-red-200 rounded-[50%]" >
+                    <img src="" alt="">
+                </div> 
+                <input type="text" placeholder="Name" class="bg-[#eee] border-0 my-[8px] py-[10px] px-[15px] text-13px rounded-[8px] w-full outline-none">
+                <input type="email" placeholder="Email" class="bg-[#eee] border-0 my-[8px] py-[10px] px-[15px] text-13px rounded-[8px] w-full outline-none">
+                <input type="password" placeholder="Password" class="bg-[#eee] border-0 my-[8px] py-[10px] px-[15px] text-13px rounded-[8px] w-full outline-none">
+                <button class="bg-[#512da8] text-[#fff] text-[12px] px-[45px] py-[10px] border-[1px solid transparent] rounded-[8px] text-semibold tracking-[0.5px] uppercase mt-[10px] cursor-pointer">Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in  bg-[#fff] flex items-center justify-center flex-col px-[40px] h-full">
+            <form class="bg-[#fff] flex items-center justify-center flex-col px-[40px] h-full">
+                <h1 class="text-3xl">Sign In</h1>
+                <input type="email" placeholder="Email" class="bg-[#eee] border-0 my-[8px] py-[10px] px-[15px] text-13px rounded-[8px] w-full outline-none">
+                <input type="password" placeholder="Password" class="bg-[#eee] border-0 my-[8px] py-[10px] px-[15px] text-13px rounded-[8px] w-full outline-none">
+                <a href="#" class="text-[#333] text-[13px] decoration-0 cursor-pointer m-[15px 0 10px] ">Forget Your Password?</a>
+                <button class="bg-[#512da8] text-[#fff] text-[12px] px-[45px] py-[10px] border-[1px solid transparent] rounded-[8px] text-semibold tracking-[0.5px] uppercase mt-[10px] cursor-pointer">Sign In</button>
+            </form>
+        </div>
+        
+        <div class="toggle-container absolute top-0 left-[50%] w-1/2 h-full overflow-hidden ">
+            <div class="toggle bg-[#512da8] h-full text-white relative left-[-100%] h-full w-[200%] ">
+                <div class="toggle-panel toggle-left  absolute w-1/2 h-full flex items-center justify-center flex-col px-[30px] text-center top-0">
+                    <h1 class="text-3xl">Welcome Back!</h1>
+                    <p class="text-[14px] leading-[20px] tracking-[.3px] my-[20px]">Enter your personal details to use all of site features</p>
+                    <button class="hid bg-transparent text-[#fff] text-[12px] px-[45px] py-[10px] border-white border rounded-[8px] text-semibold tracking-[0.5px] uppercase mt-[10px] cursor-pointer" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right absolute w-1/2 h-full flex items-center justify-center flex-col px-[30px] text-center top-0">
+                    <h1 class="text-3xl">Hello, Friend!</h1>
+                    <p class="text-[14px] leading-[20px] tracking-[.3px] my-[20px]">Register with your personal details to use all of site features</p>
+                    <button class="hid bg-transparent text-[#fff] text-[12px] px-[45px] py-[10px] border-white border rounded-[8px] text-semibold tracking-[0.5px] uppercase mt-[10px] cursor-pointer" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
